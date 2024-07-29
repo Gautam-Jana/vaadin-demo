@@ -1,0 +1,60 @@
+@import 'cards.css';
+
+.main-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-year, .card-location, .card-date, .card-award {
+    margin: 4px 0;
+}
+
+.card-date {
+    align-self: flex-end;
+    font-size: 0.9em;
+    color: #BBBBBB;
+}
+
+.card-award {
+    font-size: 1em;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 600px) {
+    .card {
+        flex: 1 1 calc(50% - 16px);
+    }
+}
+
+@media (min-width: 900px) {
+    .card {
+        flex: 1 1 calc(33.333% - 16px);
+    }
+}
