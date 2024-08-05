@@ -15,14 +15,13 @@ import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.router.RouteAlias;
 import com.vaadin.flow.theme.lumo.LumoUtility.Gap;
 
 
 @PageTitle("My App")
 @Menu(icon = "line-awesome/svg/align-justify-solid.svg", order = 0)
 @Route(value = "app",layout = MainLayout.class)
-@RouteAlias(value = "",layout = MainLayout.class)
+//@RouteAlias(value = "",layout = MainLayout.class)
 public class MyAppView extends Composite<VerticalLayout> {
 
     public MyAppView() {
